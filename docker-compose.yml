@@ -3,7 +3,7 @@ version: "3.9"
 services:
   postgres-01:
     container_name: postgres-01
-    image: postgres:13.3
+    build: .
     ports:
       - 5432:5432
     environment:
@@ -12,7 +12,7 @@ services:
       - postgres-01-data:/var/lib/postgresql/data
   postgres-02:
     container_name: postgres-02
-    image: postgres:13.3
+    build: .
     ports:
       - 5433:5432
     environment:
@@ -21,7 +21,7 @@ services:
       - postgres-02-data:/var/lib/postgresql/data
   postgres-03:
     container_name: postgres-03
-    image: postgres:13.3
+    build: .
     ports:
       - 5434:5432
     environment:

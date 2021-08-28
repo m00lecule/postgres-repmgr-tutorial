@@ -56,3 +56,7 @@ create publication
 ```psql
 
 ```
+
+#TODO:
+- purpose of `pg_hba.conf` and `postgresql.conf` files
+- psql installation on localhost
